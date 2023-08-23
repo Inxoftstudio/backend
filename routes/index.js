@@ -19,7 +19,7 @@ router.get('/refresh', authController.refresh)         // refresh
 // blog routes
 router.post('/blog', auth, blogController.create)       // create 
 router.put('/blog', auth, blogController.update)        // Edit
-router.get('/blog/all', auth, blogController.getAll)    // Get All
+router.get('/blog/all', blogController.getAll)    // Get All
 router.get('/blog/:id', auth, blogController.getById)   // Get By Id
 router.delete('/blog/:id', auth, blogController.delete) // Delete  
 

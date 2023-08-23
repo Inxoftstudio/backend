@@ -3,7 +3,7 @@ class CommentDTO{
         this._id = comment._id;
         this.createdAt = comment.createdAt;
         this.content = comment.content;
-        this.authorUsername = comment.author.username
+        this.authorUsername = comment.author.name
     }
 }
 

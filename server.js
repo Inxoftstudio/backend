@@ -18,8 +18,6 @@ dbconnect()
 
 app.use(router);
 
-app.use("/storage", express.static("storage"));
-
 app.use(errorHandler);
 
 app.listen(PORT, () => {

@@ -52,6 +52,7 @@ const authController = {
         let accessToken
         let refreshToken
         let user
+
         try {
             // Store User in Database
             const userToRegister = new User({
@@ -84,7 +85,6 @@ const authController = {
             maxAge: 1000 * 60 * 60 * 24,
             httpOnly: true,
         });
-
 
         const userDTO = new UserDTO(user)
         return res.status(201).json({ user: userDTO, auth: true })
